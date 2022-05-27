@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="ProductGrid" Grid.Row="1" Margin="5">
+            <ListView.View>
+                <GridView x:Name="Grid">
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Nazwa" DisplayMemberBinding="{Binding Nazwa}"/>
+                    <GridViewColumn Header="Dlugi opis" DisplayMemberBinding="{Binding Dlugi_opis}" Width="80"/>
+                    <GridViewColumn Header="Waga" DisplayMemberBinding="{Binding Waga}"/>
+                    <GridViewColumn Header="Kod" DisplayMemberBinding="{Binding Kod}"/>
+                    <GridViewColumn Header="EAN" DisplayMemberBinding="{Binding Ean}"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="Typ" DisplayMemberBinding="{Binding Typ}"/>
+                    <GridViewColumn Header="Cena zewnętrzna" DisplayMemberBinding="{Binding Cena_zewnetrzna}"/>
+                    <GridViewColumn Header="Cena zewnętrzna hurt" DisplayMemberBinding="{Binding Cena_zewnetrzna_hurt}"/>
+                    <GridViewColumn Header="Vat" DisplayMemberBinding="{Binding Vat}"/>
+                    <GridViewColumn Header="Ilość wariantów" DisplayMemberBinding="{Binding Ilosc_wariantow}"/>
+                    <GridViewColumn Header="Ilość zdjęć" DisplayMemberBinding="{Binding Ilosc_zdjec}"/>
+                    <GridViewColumn Header="Marża" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
